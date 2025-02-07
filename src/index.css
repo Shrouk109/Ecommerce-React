@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Encode Sans Expanded", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  @apply text-[#cfcece] font-semibold;
+}
+.count {
+  @apply block w-6 h-6 rounded-full absolute left-4 -top-3 border border-slate-400 bg-slate-100 text-sm text-center leading-6 text-blue;
+}
+.btn {
+  @apply py-2.5 px-5 me-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue focus:z-10 focus:ring-1 focus:ring-gray-100;
+}
+
+body {
+  font-family: var(--font-family);
+}
+li {
+  @apply text-white  text-lg;
+}
+.style-img {
+  transition: 0.3s; 
+}
+.style-img:hover {
+  @apply border border-blue shadow-lg;
+}
